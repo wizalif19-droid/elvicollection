@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Elvi Collection</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #c9a227;
+    }
+
+    .logo {
+      color: #d4af37;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      background:
+        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)),
+        radial-gradient(circle at center, #3a2b00, #080808 60%);
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background: #d4af37;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      background: #fff;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #d4af37;
+      font-size: 35px;
+      margin-bottom: 35px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .category {
+      background: #151515;
+      border: 1px solid #4b3a08;
+      padding: 50px 20px;
+      border-radius: 12px;
+      transition: .3s;
+    }
+
+    .category:hover {
+      transform: translateY(-8px);
+      border-color: #d4af37;
+    }
+
+    .category h3 {
+      color: #d4af37;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #000;
+      border-top: 1px solid #4b3a08;
+      color: #aaa;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">ELVI COLLECTION</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Elvi Collection</h1>
+
+      <p>Elegant Abaya • Hijab • Fashion</p>
+
+      <a href="#shop" class="btn">SHOP NOW</a>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <h2>Our Collection</h2>
+
+    <div class="categories">
+
+      <div class="category">
+        <h3>Abaya</h3>
+        <p>Elegant and beautiful Abaya collections.</p>
+      </div>
+
+      <div class="category">
+        <h3>Hijab</h3>
+        <p>Premium Hijab styles for every occasion.</p>
+      </div>
+
+      <div class="category">
+        <h3>Clothes</h3>
+        <p>Modern fashion with an elegant touch.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Welcome to Elvi Collection 🖤✨</p>
+  </section>
+
+  <footer>
+    © 2026 Elvi Collection. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
