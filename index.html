@@ -323,15 +323,19 @@
 
 <body>
 
-  <header>
-    <div class="logo">ELVI COLLECTION</div>
+<header>
+  <div class="logo">ELVI COLLECTION</div>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+
+    <a href="#cart" class="cart-link">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </a>
+  </nav>
+</header>
 
   <section class="hero">
     <div>
@@ -453,6 +457,25 @@
 const searchInput = document.getElementById("searchInput");
 const categoryFilter = document.getElementById("categoryFilter");
 const products = document.querySelectorAll(".product-card");
+    let cart = [];
+
+function addToCart(name, price) {
+
+  cart.push({
+    name: name,
+    price: price
+  });
+
+  updateCartCount();
+
+  alert(name + " ወደ Cart ገብቷል 🛒");
+}
+
+function updateCartCount() {
+
+  document.getElementById("cartCount").textContent = cart.length;
+
+}
 
 function filterProducts() {
 
